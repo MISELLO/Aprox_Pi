@@ -6,12 +6,12 @@ This square has a circle inscribed inside it.
 If we divide the number of points inside the circle, by the total points generated
 and multiply it by 4 we optain a number that aproximates Pi.
 
- #########
- # #   # #
- ##     ##
- #       #
- #       #
- #       #
- ##     ##
- # #   # #
- #########
+ *********
+ * *   * *
+ **     **
+ *       *
+ *       *
+ *       *
+ **     **
+ * *   * *
+ *********
