@@ -11,10 +11,10 @@
 *	#       #
 *	#       #
 *	##     ##
-*   # #   # #
+*	# #   # #
 *	#########
 *
-*/
+ */
 
 package main
 
@@ -37,19 +37,19 @@ func main() {
 		var in int
 		var x, y float32
 
-		for i:=0; i < it; i++ {
+		for i := 0; i < it; i++ {
 			x = rand.Float32() * side
 			y = rand.Float32() * side
 
-			if math.Hypot(float64(x - side/2), float64(y - side/2)) < float64(side/2) {
+			if math.Hypot(float64(x-side/2), float64(y-side/2)) < float64(side/2) {
 				in++
 			}
 		}
 
-		if in == 0 || it - in == 0 {
-			fmt.Printf(" Too few points generated.\n  Points inside circle  = %d\n  Points outside circle = %d\n", in, it - in)
+		if in == 0 || it-in == 0 {
+			fmt.Printf(" Too few points generated.\n  Points inside circle  = %d\n  Points outside circle = %d\n", in, it-in)
 		} else {
-			fmt.Printf(" Aproximated π is %0.6f.\n  Points inside circle  = %d\n  Points outside circle = %d\n", (float32(in)/float32(it))*4.0, in, it - in)
+			fmt.Printf(" Aproximated π is %0.6f.\n  Points inside circle  = %d\n  Points outside circle = %d\n", (float32(in)/float32(it))*4.0, in, it-in)
 		}
 	}
 }
